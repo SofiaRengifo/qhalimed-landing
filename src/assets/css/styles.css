@@ -222,12 +222,36 @@ a{
 .header .cta-btn, .header .cta-btn:focus {
     color: var(--contrast-color);
     /* background: linear-gradient(to right, #80D8B5, #42b5c7); */
-    background: linear-gradient(to right, #80D8B5, #00CFC1);
+    background-image: linear-gradient(to right, #06CFC0, #FFC261,#FE6F63);
+    background-position: left;
+    background-size: 200%;
     font-size: 14px;
     padding: 8px 25px;
     margin: 0 0 0 30px;
     border-radius: 50px;
-    transition: 0.3s;
+    transition: all 0.6s;
+}
+.header .cta-btn:hover
+ {
+    background-position: right;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulse-effect {
+  animation: pulse 1s ease-in-out 2;
 }
 @media (min-width: 992px) {
     .navmenu ul {

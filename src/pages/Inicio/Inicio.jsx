@@ -10,6 +10,8 @@ import { useState, useEffect } from 'react';
 import portada1 from "../../assets/img/portada.jpg";
 import portada2 from "../../assets/img/portada3.jpg";
 import portada3 from "../../assets/img/portada2.jpg";
+import videoPortada1 from "../../assets/img/portada1.mp4";
+
 
 import iconoEco from '../../assets/img/ecografias.png';
 import iconoEndo from '../../assets/img/endocrinologia.png';
@@ -106,22 +108,22 @@ function Inicio() {
   const slides = [
     {
       img: portada1,
-      emfasis: "Cuidamos",
-      title: " a los que más amas",
+      emfasis: "Nuestros especialistas",
+      title: " tu mejor respaldo",    
       text: "En QHALIMED, estamos comprometidos para que tú y tus seres queridos estén siempre en las mejores manos.",
       align: "start", animation: "fade-right"
     },
     {
       img: portada2,
-      emfasis: "Nuestros especialistas",
-      title: " tu mejor respaldo",
+      emfasis: "Infórmate",
+      title: " con nuestras publicaciones médicas",
       text: "Contamos con un equipo de médicos altamente capacitados en diversas especialidades, siempre enfocados en el bienestar de cada paciente.",
       align: "center", animation: "fade-up"
     },
     {
       img: portada3,
-      emfasis: "Infórmate",
-      title: " con nuestras publicaciones médicas",
+      emfasis: "Cuidamos",
+      title: " a los que más amas",
       text: "Accede a consejos de salud, noticias y novedades de la clínica.",
       align: "end", animation: "fade-left"
     },
@@ -156,6 +158,33 @@ function Inicio() {
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div className="slider-slide" key={index}>
+              {index === 0 ? (
+                <div className="video-slide" style={{ position: "relative", height: "500px", overflow: "hidden" }}>
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    style={{
+                      width: "100%",
+                      height: "500px",
+                      objectFit: "cover",
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      zIndex: 1
+                    }}
+                    src={videoPortada1}
+                  />
+                  <div className={`container d-flex align-items-center justify-content-${slide.align}`} style={{ height: "500px", position: "relative", zIndex: 2 }}>
+                    <div className={`text-content ${index === currentSlide ? `fade-in ${slide.animation}` : ""}`} style={{ width: "50%", textAlign: slide.align, color: "#fff" }}>
+                      <h1 className="mb-3"><span style={{ color: "#FE6F63" }}>{slide.emfasis}</span>{slide.title}</h1>
+                      <p>{slide.text}</p>
+                      <Link className="btn mt-3" to={slide.link}>Ver más</Link>
+                    </div>
+                  </div>
+                </div>
+              ) : (
               <div
                 className="bg-slide"
                 style={{
@@ -173,6 +202,7 @@ function Inicio() {
                   </div>
                 </div>
               </div>
+              )}
             </div>
           ))}
         </Slider>
@@ -235,9 +265,9 @@ function Inicio() {
       <div className="emergency" style={{ marginTop: "-60px" }}>
         <div className="container">
           <div className="col text-center py-6 " data-aos="fade-up">
-            <h2>¿Necesitas ayuda inmediata?</h2>
+            <h2>¿Necesitas ayuda?</h2>
             <h1 className="text-light text-shadow my-3">+51 992 654 854</h1>
-            <p>Llámanos las 24 horas para atención médica de urgencia.</p>
+            <p>Llámanos o escribenos para agendar tu cita.</p>
           </div>
         </div>
       </div>

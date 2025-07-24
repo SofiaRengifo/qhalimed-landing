@@ -18,7 +18,7 @@ function App() {
   }, []);
   return (
     <>
-     <Router>
+     <Router basename="/qhalimed-landing">
       <Navbar />
         <Routes>
           <Route path="/" element={<Inicio />} />

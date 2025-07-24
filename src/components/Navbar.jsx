@@ -75,7 +75,7 @@ function Navbar() {
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="">Médicos</a></li>
                 <li><a href="">Blog</a></li>
-                  <a className="cta-btn" href="#appointment">Agendar una cita</a>
+                  <a className="cta-btn pulse-effect" href="#appointment">Agendar una cita</a>
               </ul>
             </nav>
           </div>
