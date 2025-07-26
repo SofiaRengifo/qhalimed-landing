@@ -37,6 +37,9 @@
 .slider-container{
   overflow:hidden;
 }
+.slider-title{
+  text-shadow: -1px 1px 0px #FFFFFF;
+}
 .btn{
     color: var(--contrast-color);
     background: #1E394E;

@@ -178,7 +178,7 @@ function Inicio() {
                   />
                   <div className={`container d-flex align-items-center justify-content-${slide.align}`} style={{ height: "500px", position: "relative", zIndex: 2 }}>
                     <div className={`text-content ${index === currentSlide ? `fade-in ${slide.animation}` : ""}`} style={{ width: "50%", textAlign: slide.align, color: "#fff" }}>
-                      <h1 className="mb-3"><span style={{ color: "#FE6F63" }}>{slide.emfasis}</span>{slide.title}</h1>
+                      <h1 className="mb-3 slider-title"><span style={{ color: "#FE6F63" }}>{slide.emfasis}</span>{slide.title}</h1>
                       <p>{slide.text}</p>
                       <Link className="btn mt-3" to={slide.link}>Ver más</Link>
                     </div>
@@ -196,7 +196,7 @@ function Inicio() {
               >
                 <div className={`container d-flex align-items-center justify-content-${slide.align}`} style={{ height: "500px" }}>
                   <div className={`text-content ${index === currentSlide ? `fade-in ${slide.animation}` : ""}`} style={{ width: "50%", textAlign: slide.align }}>
-                    <h1 className="mb-3"><span style={{ color: "#FE6F63" }}>{slide.emfasis}</span>{slide.title} </h1>
+                    <h1 className="mb-3 slider-title"><span style={{ color: "#FE6F63" }}>{slide.emfasis}</span>{slide.title} </h1>
                     <p>{slide.text}</p>
                     <Link className="btn mt-3" to={slide.link}>Ver más</Link>
                   </div>
