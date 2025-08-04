@@ -58,8 +58,8 @@ function About() {
           </div>
           <div className="valores mt-4">
             <p><span><i class="fa-solid fa-circle-check me-2"></i>Humanidad: </span>Ponemos a la persona en el centro de todo lo que hacemos, con respeto, escucha activa y calidez en cada consulta.</p>
-            <p><span><i class="fa-solid fa-circle-check me-2"></i>Innovación: </span>Ponemos a la persona en el centro de todo lo que hacemos, con respeto, escucha activa y calidez en cada consulta.</p>
-            <p><span><i class="fa-solid fa-circle-check me-2"></i>Confianza: </span>Ponemos a la persona en el centro de todo lo que hacemos, con respeto, escucha activa y calidez en cada consulta.</p>
+            <p><span><i class="fa-solid fa-circle-check me-2"></i>Innovación: </span>Incorporamos tecnologías médicas y digitales que optimizan el diagnóstico, el tratamiento y la experiencia del paciente.</p>
+            <p><span><i class="fa-solid fa-circle-check me-2"></i>Confianza: </span>Actuamos con ética, responsabilidad y transparencia, generando vínculos sólidos con nuestros pacientes y profesionales.</p>
             <p><span><i class="fa-solid fa-circle-check me-2"></i>Excelencia médica: </span>Nuestro equipo está en constante capacitación y mejora para ofrecer servicios seguros, actualizados y eficaces.</p>
             <p><span><i class="fa-solid fa-circle-check me-2"></i>Accesibilidad: </span>Acercamos la salud a más personas mediante modelos flexibles de atención y canales digitales amigables.</p>
           </div>
