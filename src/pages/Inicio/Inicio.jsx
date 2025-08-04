@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { useState, useEffect } from 'react';
 
-import portada1 from "../../assets/img/portada.jpg";
 import portada2 from "../../assets/img/portada3.jpg";
 import portada3 from "../../assets/img/portada2.jpg";
 import videoPortada1 from "../../assets/img/portada1.mp4";
@@ -107,7 +106,7 @@ function Inicio() {
 
   const slides = [
     {
-      img: portada1,
+      img: portada2,
       emfasis: "Nuestros especialistas",
       title: " tu mejor respaldo",    
       text: "En QHALIMED, estamos comprometidos para que tú y tus seres queridos estén siempre en las mejores manos.",
@@ -314,32 +313,7 @@ function Inicio() {
           </Slider>
         </div>
       </div>
-      <div className="container ">
-        <div className="row contact justify-content-center text-white p-5">
-            <div className="col-lg-4">
-              <div className="media">
-                <div className="media-body ml-3"><a className="text-light fs-1 font-weight-semi-bold mb-0" href="tel:12345678910"><h4>+(123) 456 78910</h4></a>
-                  <p className="fs--1 mb-0">¿Tienes alguna pregunta? Llámanos ahora</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mt-3 mt-lg-0">
-              <div className="media">
-                <div className="media-body ml-3"><a className="text-white fs-1 font-weight-semi-bold mb-0" href="mailto:help@qhalimed.com"><h4>ayuda@qhalimed.com</h4></a>
-                  <p className="fs--1 mb-0">¿Necesitas ayuda? Escríbenos.</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mt-3 mt-lg-0">
-              <div className="media">
-                <div className="media-body ml-3">
-                  <h4>Lun – Sáb 07:00 – 21:00</h4>
-                  <p className="fs--1 mb-0">Horario de atención</p>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
+  
     </div>
   );
 }

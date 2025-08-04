@@ -1,93 +1,68 @@
-.img-contenido{
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    min-height:300px;
+.bg-head{
+  background-image: url('/img/portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top:5rem;
+  padding-bottom:5rem;
 }
-.valores h3{
-    font-weight: 800;
-    font-size: 20px;
+.historia{
+  background: linear-gradient(180deg, #FFFFFF 14.58%, #1E394E 14.59%);
 }
-.valores p{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    margin-top:30px;
+
+.historia h2{
+  color:#FFC261;
+  text-align:center;
 }
-.item {
-    padding: 18px;
-    text-align: center;
-    max-width: 377px;
-    border-radius:30px;
-    padding-bottom: 40px;
-    padding-top: 30px;
-    width: 45%;
-    min-width: 233px;
+.historia p{
+  color:white;
+  text-align:justify;
 }
-.valores {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px 7.5%; 
-    justify-content: space-evenly;
+.historia img{
+  max-width:410px;
 }
-@media (max-width: 575.98px) {
-    .valores{
-        padding-inline: 3rem;
-    }
-    .img-3{
-        background-position-x: 45%;
-        background-size: 180%;
-    }
-    .img-mision{
-        background-position-y: 50%!important;
-        min-height: 270px;
-    }
- }
-@media (min-width: 768px) { 
-    .valores {
-        gap: 90px 7.5%; 
-    }
-    .item {
-        padding: 38px;
-        border-radius:40px;
-        padding-bottom: 70px;
-        padding-top: 38px;
-    }
-    .valores h3{
-        font-size: 32px;
-    }
-    .valores p{
-        font-size: 24px;
-        line-height: 30px;
-    }
-    .Responsabilidad{
-        font-size: 28px!important;
-    }
- }
- @media (min-width: 1200px) { 
-    .valores h3{
-        font-size: 40px;
-    }
-    .valores p{
-        font-size: 28px;
-    }
-    .Responsabilidad{
-        font-size: 34px!important;
-    }
- }
- @media (max-width: 991.98px) { 
-    .img-mision{
-        background-image: url('../../assets/img/VISION.webp')!important;
-        background-position-y: 40%;
-    }
- }
- @media (min-width: 768px) and (max-width: 991.98px) {
-    .img-3{
-        height: 456px;
-        background-position-x: 45%;
-    }
-    .valores {
-        gap: 60px 7.5%;
-    }
- }
+.caracteristicas{
+  justify-content: space-between;
+  gap: 1.4rem;
+  width: 100%;
+}
+.caracteristicas div{
+  background-color:#80D8B5;
+  padding:1.3rem;
+  border-radius:1rem;
+  text-align:center;
+}
+.caracteristicas h5{
+  margin-bottom:0;
+  font-size:1rem;
+}
+.caracteristicas i{
+  color:white;
+  margin-bottom:1.5rem;
+}
+.mision{
+  position:relative;
+}
+.mision h2{
+ background-color:#edf2f1;
+ text-align:center;
+ width: fit-content;
+ padding-inline:20px;
+ justify-self: center;
+ position:absolute;
+}
+.mision-content{
+border: 2px solid #1E394E;
+border-radius:1rem;
+padding: 2.5rem;
+margin-top: 20px;
+height: calc(100% - 20px);
+}
+.mision-content p{
+text-align:justify;
+margin-bottom:0;
+}
+.valores span{
+color:#1E394E;
+font-weight: bold;
+}

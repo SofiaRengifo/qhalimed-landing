@@ -71,7 +71,7 @@ function Navbar() {
             <nav id="navmenu" className="navmenu">
               <ul>
                 <li><NavLink to="/">Inicio</NavLink></li>
-                <li><a >Nosotros</a></li>
+                <li><NavLink to="/conocenos">Nosotros</NavLink></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="">Médicos</a></li>
                 <li><a href="">Blog</a></li>
