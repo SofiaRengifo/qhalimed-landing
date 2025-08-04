@@ -66,3 +66,20 @@ margin-bottom:0;
 color:#1E394E;
 font-weight: bold;
 }
+
+@media (max-width: 991.98px) {
+  .historia h2{
+    padding-top: 5rem;
+  }
+  .historia .order-lg-1{
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .historia{
+   background:#1E394E;
+   }
+    .historia h2{
+    padding-top: 2rem;
+  }
+ }
