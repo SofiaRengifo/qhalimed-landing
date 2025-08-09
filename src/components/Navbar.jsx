@@ -3,50 +3,16 @@ import logo from '/src/assets/img/LOGO QHALIMED.png';
 import { useEffect } from "react";
 
 function Navbar() {
-    useEffect(() => {
-    const toggleScrolled = () => {
-      const body = document.body;
-      const header = document.querySelector("#header");
 
-      if (
-        !header ||
-        (
-          !header.classList.contains("scroll-up-sticky") &&
-          !header.classList.contains("sticky-top") &&
-          !header.classList.contains("fixed-top")
-        )
-      ) {
-        return;
-      }
-
-      if (window.scrollY > 100) {
-        body.classList.add("scrolled");
-      } else {
-        body.classList.remove("scrolled");
-      }
-    };
-
-    window.addEventListener("scroll", toggleScrolled);
-    window.addEventListener("load", toggleScrolled);
-
-    // Ejecutar una vez al montar
-    toggleScrolled();
-
-    // Limpieza cuando el componente se desmonta
-    return () => {
-      window.removeEventListener("scroll", toggleScrolled);
-      window.removeEventListener("load", toggleScrolled);
-    };
-  }, []);
 
   return (
     <>
-      <header id="header" className="header sticky-top">
+      <header id="header" className="header">
         <div className="topbar d-flex align-items-center">
           <div className="container d-flex justify-content-center justify-content-md-between">
             <div className="contact-info d-flex align-items-center">
               <div className="d-flex align-items-center">
-                 <i className="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
                 <a href="mailto:contact@example.com">contact@example.com</a>
               </div>
               <div className="d-flex align-items-center ms-4">
@@ -67,7 +33,7 @@ function Navbar() {
               <img src={logo} alt="Qhalimed Logo" />
             </a>
             <i className="mobile-nav-toggle d-xl-none fa-solid fa-bars"
-                onClick={() => {const nav = document.getElementById('navmenu');nav.classList.toggle('open');}}></i>
+              onClick={() => { const nav = document.getElementById('navmenu'); nav.classList.toggle('open'); }}></i>
             <nav id="navmenu" className="navmenu">
               <ul>
                 <li><NavLink to="/">Inicio</NavLink></li>
@@ -75,7 +41,7 @@ function Navbar() {
                 <li><NavLink to="/Servicios" onClick={() => window.scrollTo(0, 0)}>Servicios</NavLink></li>
                 <li><a href="">Médicos</a></li>
                 <li><a href="">Blog</a></li>
-                  <a className="cta-btn pulse-effect" href="#appointment">Agendar una cita</a>
+                <a className="cta-btn pulse-effect" href="#appointment">Agendar una cita</a>
               </ul>
             </nav>
           </div>
