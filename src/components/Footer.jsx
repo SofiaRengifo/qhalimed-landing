@@ -3,9 +3,9 @@ import logo from '/src/assets/img/LOGO QHALIMED.png';
 function Footer() {
   return (
     <>
-      <div>
-            <div className="container ">
-        <div className="row contact justify-content-center text-white p-5">
+      <div className='position-relative'>
+        <div className="container absolute">
+          <div className="row contact justify-content-center text-white p-5">
             <div className="col-lg-4">
               <div className="media">
                 <div className="media-body ml-3"><a className="text-light fs-1 font-weight-semi-bold mb-0" href="tel:12345678910"><h4>+(123) 456 78910</h4></a>
@@ -29,7 +29,7 @@ function Footer() {
               </div>
             </div>
           </div>
-      </div>
+        </div>
 
 
         <div className='footer'>

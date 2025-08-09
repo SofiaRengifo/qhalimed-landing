@@ -14,6 +14,7 @@ import videoPortada1 from "../../assets/img/portada1.mp4";
 
 import iconoEco from '../../assets/img/ecografias.png';
 import iconoEndo from '../../assets/img/endocrinologia.png';
+import iconoTrauma from '../../assets/img/hueso.png';
 
 import blog1 from '../../assets/img/blog/news1.jpg';
 import blog2 from '../../assets/img/blog/news2.jpg';
@@ -214,23 +215,31 @@ function Inicio() {
               <p className="text-light mt-3">
                 Te ofrecemos una atención médica completa, con especialidades y procedimientos pensados para cuidar tu salud en cada etapa de la vida.
               </p>
-              <Link className="btn light mt-3">Ver servicios <i className="ms-2 fa-solid fa-circle-right"></i></Link>
+              <Link to="/Servicios" onClick={() => window.scrollTo(0, 0)} className="btn light mt-3">Ver servicios <i className="ms-2 fa-solid fa-circle-right"></i></Link>
             </div>
 
             <div className="col-lg-9 service-content pt-4 pt-lg-0 ps-lg-3 pe-lg-0">
               <div className="service-grid h-100">
-                <div className="service-box span-2 position-relative" data-aos="fade-left">
+                <div className="service-box position-relative" data-aos="fade-left">
                   <i className="fa-solid fa-stethoscope bg-icon"></i>
                   <div className="content">
                     <h5>Medicina interna</h5>
                     <p className="mt-3 mb-0">Diagnóstico y tratamiento integral de enfermedades en adultos, con enfoque en la prevención y el seguimiento personalizado.</p>
                   </div>
                 </div>
-                <div className="service-box span-2 position-relative" data-aos="fade-left" data-aos-delay="300">
+               
+                <div className="service-box position-relative" data-aos="fade-left" data-aos-delay="300">
                   <img src={iconoEco} alt="ecografía" />
                   <div className="content">
                     <h5>Ecografías</h5>
                     <p className="mt-3 mb-0">Estudios ecográficos precisos y confiables, apoyando el diagnóstico médico con imágenes de alta calidad.</p>
+                  </div>
+                </div>
+                <div className="service-box position-relative" data-aos="fade-left">
+                   <img src={iconoTrauma} alt="traumatologia" />
+                  <div className="content">
+                    <h5>Traumatología</h5>
+                    <p className="mt-3 mb-0">Atención integral para prevenir y tratar lesiones óseas, articulares y musculares, promoviendo la movilidad del paciente.</p>
                   </div>
                 </div>
                 <div className="service-box position-relative" data-aos="fade-left">
@@ -254,6 +263,7 @@ function Inicio() {
                     <p className="mt-3 mb-0">Atención especializada en la salud femenina, desde controles preventivos hasta tratamientos ginecológicos avanzados.</p>
                   </div>
                 </div>
+                
               </div>
             </div>
 
@@ -271,7 +281,7 @@ function Inicio() {
         </div>
       </div>
       <div className="blog" style={{ marginTop: "-60px" }}>
-        <div className="container py-6">
+        <div className="container py-6 pb-10">
           <div className="text-center justify-items-center" data-aos="fade-up">
             <h2>Consejos de <span style={{ color: "#fe6f63" }}>salud y novedades</span></h2>
             <p className="w-70 mt-3">Infórmate con artículos escritos por nuestros especialistas. Encuentra recomendaciones, noticias médicas y tips para cuidar tu salud y la de tu familia.</p>

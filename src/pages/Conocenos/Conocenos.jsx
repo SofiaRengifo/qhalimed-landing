@@ -1,14 +1,12 @@
 import "./Conocenos.css";
+import Banner from "../../components/Banner";
 import historiaimg from "../../assets/img/historiaimg.png";
+import portadaNosotros from "../../assets/img/portadas/nosotros.jpg";
 function About() {
   return (
     <>
       <div>
-        <div className="bg-head">
-          <div className="container">
-            <h1 className="py-4" data-aos="fade-right">Nosotros</h1>
-          </div>
-        </div>
+        <Banner title="Nosotros" image={portadaNosotros} />
         <div className="container py-6 text-center"data-aos="fade-up">
           <p>En QHALIMED, somos una clínica comprometida con el cuidado integral de la salud, brindando atención médica personalizada, oportuna y de calidad. Nuestro propósito es acompañar a cada paciente en su camino hacia el bienestar, ofreciendo un servicio humano que combina conocimiento médico, tecnología actualizada y un trato cálido.</p>
         </div>
@@ -51,17 +49,17 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="container py-6">
+        <div className="container py-6 pb-10">
           <div className="text-center justify-items-center" data-aos="fade-up">
             <h2>Nuestros <span style={{ color: "#fe6f63" }}>valores</span></h2>
          
           </div>
           <div className="valores mt-4">
-            <p><span><i class="fa-solid fa-circle-check me-2"></i>Humanidad: </span>Ponemos a la persona en el centro de todo lo que hacemos, con respeto, escucha activa y calidez en cada consulta.</p>
-            <p><span><i class="fa-solid fa-circle-check me-2"></i>Innovación: </span>Incorporamos tecnologías médicas y digitales que optimizan el diagnóstico, el tratamiento y la experiencia del paciente.</p>
-            <p><span><i class="fa-solid fa-circle-check me-2"></i>Confianza: </span>Actuamos con ética, responsabilidad y transparencia, generando vínculos sólidos con nuestros pacientes y profesionales.</p>
-            <p><span><i class="fa-solid fa-circle-check me-2"></i>Excelencia médica: </span>Nuestro equipo está en constante capacitación y mejora para ofrecer servicios seguros, actualizados y eficaces.</p>
-            <p><span><i class="fa-solid fa-circle-check me-2"></i>Accesibilidad: </span>Acercamos la salud a más personas mediante modelos flexibles de atención y canales digitales amigables.</p>
+            <p><span><i className="fa-solid fa-circle-check me-2"></i>Humanidad: </span>Ponemos a la persona en el centro de todo lo que hacemos, con respeto, escucha activa y calidez en cada consulta.</p>
+            <p><span><i className="fa-solid fa-circle-check me-2"></i>Innovación: </span>Incorporamos tecnologías médicas y digitales que optimizan el diagnóstico, el tratamiento y la experiencia del paciente.</p>
+            <p><span><i className="fa-solid fa-circle-check me-2"></i>Confianza: </span>Actuamos con ética, responsabilidad y transparencia, generando vínculos sólidos con nuestros pacientes y profesionales.</p>
+            <p><span><i className="fa-solid fa-circle-check me-2"></i>Excelencia médica: </span>Nuestro equipo está en constante capacitación y mejora para ofrecer servicios seguros, actualizados y eficaces.</p>
+            <p><span><i className="fa-solid fa-circle-check me-2"></i>Accesibilidad: </span>Acercamos la salud a más personas mediante modelos flexibles de atención y canales digitales amigables.</p>
           </div>
         </div>
       </div>

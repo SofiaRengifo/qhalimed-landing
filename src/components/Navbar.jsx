@@ -71,8 +71,8 @@ function Navbar() {
             <nav id="navmenu" className="navmenu">
               <ul>
                 <li><NavLink to="/">Inicio</NavLink></li>
-                <li><NavLink to="/conocenos">Nosotros</NavLink></li>
-                <li><a href="#servicios">Servicios</a></li>
+                <li><NavLink to="/nosotros">Nosotros</NavLink></li>
+                <li><NavLink to="/Servicios" onClick={() => window.scrollTo(0, 0)}>Servicios</NavLink></li>
                 <li><a href="">Médicos</a></li>
                 <li><a href="">Blog</a></li>
                   <a className="cta-btn pulse-effect" href="#appointment">Agendar una cita</a>

@@ -407,8 +407,7 @@ a{
 /* FOOTER*/
 .footer{
     background: linear-gradient(to left, #00CFC1, #80D8B5);
-    margin-top:-70px;
-        z-index: -1;
+    z-index: -1;
     position: relative;
     padding-top:6rem;
     padding-bottom:1rem;
@@ -432,3 +431,39 @@ a{
 .footer .border-top{
     border-top: var(--bs-border-width) var(--bs-border-style) #1E394E !important;
 }
+.absolute{
+    position: absolute;
+    justify-self: center;
+    top: -80px;
+}
+.bg-head{
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top:5rem;
+  padding-bottom:5rem;
+}
+.pb-10{
+    padding-bottom: 10rem;
+}
+@media (max-width: 991.98px) {
+    .pb-10{
+    padding-bottom: 20rem;
+}
+.absolute{
+    top: -240px;
+}
+.footer{
+    padding-top: 6.5rem;
+}
+}
+@media (max-width: 495.98px) {
+    .contact {
+        padding:2rem!important;
+    }
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .contact {
+        padding:2rem!important;
+    }
+ }
