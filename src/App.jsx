@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Inicio from './pages/Inicio/Inicio';
 import Nosotros from './pages/Conocenos/Conocenos';    
 import Servicios from './pages/Servicios/Servicios';   
-import Contacto from './pages/Contacto/Contacto';
+import Medicos from './pages/Medicos/Medicos';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -45,7 +45,7 @@ function App() {
           <Route path="traumatologia" element={<Traumatologia />} />
           <Route path="ecografias" element={<Ecografias />} />
         </Route>
-        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/medicos" element={<Medicos />} />
       </Routes>
       <Footer />
     </Router>

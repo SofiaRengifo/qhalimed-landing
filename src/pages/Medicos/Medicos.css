@@ -1,0 +1,70 @@
+
+
+.custom-block {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius:20px;
+    overflow: hidden;
+    padding: 30px;
+    transition: 0.3s;
+}
+.custom-block-image-wrap {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+.custom-block-overlay .custom-block-image {
+    width: 100%;
+    height: 210px;
+    margin: auto;
+    transition: 0.3s;
+    object-position: top;
+}
+.custom-block-image {
+    display: block;
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.custom-block-overlay-info {
+    padding: 15px 20px 20px;
+    text-align: center;
+}
+.custom-block:hover {
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 1rem 3rem;
+    transform: translateY(-3px);
+    background: white;
+    border-color: transparent;
+}
+.custom-block-overlay {
+    border-color: transparent;
+    padding: 0px;
+}
+.custom-block-overlay:hover .custom-block-image {
+    padding: 15px 15px 0px;
+    border-radius: 20px 20px 50px 50px;
+}
+.custom-block-overlay-info a{
+    color:#06CFC0;
+}
+.portafolio{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    padding: 15px 15px 0px;
+    height: 100%;
+    width: 100%;
+}
+.portafolio p{
+    background: linear-gradient(180deg, rgba(128, 216, 181, 0.5) 0%, rgba(6, 207, 192, 0.5) 100%);
+    height: 100%;
+    border-radius: 5px 5px 41px 41px;
+    align-content: center;
+    text-align: center;
+    color:white;
+}
+.custom-block:hover .portafolio{
+    opacity: 1;
+    transition: 0.6s;
+}
