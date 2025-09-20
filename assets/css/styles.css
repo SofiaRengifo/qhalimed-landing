@@ -183,6 +183,7 @@ a{
     background: #fff;
     width: 100%;
     z-index: 999;
+    box-shadow: rgb(0 0 0 / 8%) 0px 10px 8px;
   }
 
   .navmenu ul {
