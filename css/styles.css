@@ -1,0 +1,522 @@
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #2c4964; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #80D8B5; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --bs-btn-hover-bg:#FE6F63;
+  --bs-btn-hover-color:#ffffff;
+  --bs-body-color:#777;
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #2c4964;  /* The default color of the main navmenu links */
+  --nav-hover-color: #80D8B5; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #2c4964; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #80D8B5; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+:root {
+    --bs-body-font-family: "Raleway", sans-serif;
+    --heading-font: "Poppins", sans-serif;
+    --nav-font: "Raleway", sans-serif;
+}
+@font-face {
+  font-family: 'Golos';
+  src: url('../fonts/GolosText-Regular.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'Golos';
+  src: url('../fonts/GolosText-Bold.ttf') format('truetype'); 
+  font-weight:bold;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+h2,h3,h4,h5{
+    font-family: "Golos", sans-serif;
+    font-weight:bold;
+    color:#1E394E;
+}
+h1{
+    font-family: "Golos", sans-serif;
+    font-weight:bold;
+    color:#1E394E;
+    font-size:calc(1.45rem + 1.5vw);
+}
+a{
+  text-decoration:none;
+}
+.py-6{
+    padding-top:5rem;
+    padding-bottom:5rem;
+}
+.py-7{
+    padding-top:6rem;
+    padding-bottom:6rem;
+}
+.header {
+    color: var(--default-color);
+    transition: all 0.5s;
+    z-index: 997;
+    background-color: var(--background-color);
+    position: sticky;
+    top: -40px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 10px;
+}
+
+.header .topbar {
+    background: linear-gradient(to left, #80D8B5, #00CFC1);
+    height: 40px;
+    padding: 0;
+    font-size: 14px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.header .branding {
+    min-height: 60px;
+    padding: 10px 0;
+}
+.header .logo
+ {
+    line-height: 1;
+}
+.header .logo img {
+  max-height: 36px;
+  margin-right: 8px;
+}
+/* @media (max-width: 1200px) {
+    .header .navmenu {
+        order: 3;
+    }
+}
+@media (max-width: 1199px) {
+    .navmenu {
+        padding: 0;
+        z-index: 9997;
+    }
+} */
+/* @media (max-width: 1199px) {
+    .mobile-nav-toggle {
+        color: var(--nav-color);
+        font-size: 28px;
+        line-height: 0;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+} */
+/* @media (max-width: 1199px) {
+    .navmenu ul {
+        display: none;
+        list-style: none;
+        position: absolute;
+        inset: 60px 20px 20px 20px;
+        padding: 10px 0;
+        margin: 0;
+        border-radius: 6px;
+        background-color: var(--nav-mobile-background-color);
+        border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+        box-shadow: none;
+        overflow-y: auto;
+        transition: 0.3s;
+        z-index: 9998;
+    }
+} */
+/* Base del menú */
+.navmenu {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+}
+
+/* Cuando el menú está abierto */
+.navmenu.open {
+  max-height: 500px; /* ajusta según el contenido real */
+}
+
+/* Ícono hamburguesa oculto en pantallas grandes */
+.mobile-nav-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menú en pantallas grandes */
+@media (min-width: 992px) {
+  .navmenu {
+    max-height: none !important;
+    overflow: visible;
+  }
+
+  .navmenu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: none;
+  }
+}
+
+/* Menú responsive (pantallas pequeñas) */
+@media (max-width: 991.98px) {
+  .navmenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .navmenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .navmenu ul li a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    margin-left: 1rem;
+    color: #000;
+  }
+
+  .cta-btn {
+    margin: 10px!important;
+    display: block;
+    width:fit-content;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+    .navmenu {
+        padding: 0;
+    }
+}
+.header .cta-btn, .header .cta-btn:focus {
+    color: var(--contrast-color);
+    /* background: linear-gradient(to right, #80D8B5, #42b5c7); */
+    background-image: linear-gradient(to right, #01cfc1, #c2e19a, #7fd8b5);
+    background-position: left;
+    background-size: 200%;
+    font-size: 14px;
+    padding: 8px 25px;
+    margin: 0 0 0 30px;
+    border-radius: 50px;
+    transition: all 0.6s;
+}
+.header .cta-btn:hover
+ {
+    background-position: right;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulse-effect {
+  animation: pulse 1s ease-in-out infinite;
+}
+@keyframes float {
+    0%,to {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+}
+.animate-float {
+    animation: float 2s 
+    ease-in-out infinite;
+}
+@media (min-width: 992px) {
+    .navmenu ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .navmenu li:hover>a, .navmenu .active, .navmenu .active:focus {
+        color: var(--nav-hover-color);
+    }
+}
+@media (min-width: 992px) {
+    .navmenu a, .navmenu a:focus {
+        color: var(--nav-color);
+        font-size: 15px;
+        padding: 0 2px;
+        font-family: var(--nav-font);
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        transition: 0.3s;
+        position: relative;
+    }
+}
+@media (min-width: 992px) {
+    .navmenu a:hover:before, .navmenu li:hover>a:before, .navmenu .active:before {
+        visibility: visible;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .navmenu>ul>li>a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        background-color: var(--nav-hover-color);
+        visibility: hidden;
+        width: 0px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+}
+@media (min-width: 992px) {
+    .navmenu>ul>li {
+        white-space: nowrap;
+        padding: 15px 14px;
+    }
+}
+@media (min-width: 992px) {
+    .navmenu li {
+        position: relative;
+    }
+}
+@media (min-width: 992px) {
+    .navmenu a i, .navmenu a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 992px) {
+    .navmenu .dropdown ul {
+        margin: 0;
+        padding: 10px 0;
+        background: var(--nav-dropdown-background-color);
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        left: 14px;
+        top: 130%;
+        opacity: 0;
+        transition: 0.3s;
+        border-radius: 4px;
+        z-index: 99;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (min-width: 992px) {
+    .navmenu .dropdown ul li {
+        min-width: 200px;
+    }
+}
+@media (min-width: 992px) {
+    .navmenu .dropdown:hover>ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+}
+@media (min-width: 992px) {
+ .navmenu .dropdown .dropdown ul{
+        top: 0;
+        left: -90%;
+        visibility: hidden;
+    }
+}
+@media (min-width: 992px) {
+    .navmenu .dropdown .dropdown:hover>ul {
+        opacity: 1;
+        top: 0;
+        left: -100%;
+        visibility: visible;
+    }
+}
+@media (min-width: 992px) {
+    .navmenu .dropdown ul a {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-transform: none;
+        color: var(--nav-dropdown-color);
+    }
+}
+.header .topbar .contact-info a, .header .topbar .contact-info a {
+    padding-left: 5px;
+    color: var(--contrast-color);
+    line-height: 0;
+    font-family: "Golos", sans-serif;
+}
+.header .topbar .contact-info i {
+    color: var(--contrast-color);
+}
+.header .topbar .social-links a {
+    color: color-mix(in srgb, var(--contrast-color), transparent 40%);
+    line-height: 0;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+.header .topbar .social-links a:hover {
+    color: var(--contrast-color);
+}
+.navmenu a{
+    font-size:16px!important;
+}
+
+/* FOOTER*/
+.footer{
+    background: linear-gradient(to left, #42d4bb, #80D8B5);
+    z-index: -1;
+    position: relative;
+    padding-top:5rem;
+    padding-bottom:1rem;
+}
+.footer p{
+    color:#1E394E;
+}
+.redes-sociales div{
+    height:50px;
+    width:50px;
+    background:white;
+    border-radius:50%;
+    text-align:center;
+    align-content: center;
+    font-size:1.5rem;
+    color:#1E394E;
+}
+.reder-sociales{
+    margin-top: auto;
+}
+.footer .border-top{
+    border-top: var(--bs-border-width) var(--bs-border-style) #1E394E !important;
+}
+.absolute{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+}
+.bg-head{
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top:5rem;
+  padding-bottom:5rem;
+}
+.pb-10{
+    padding-bottom: 10rem;
+}
+@media (max-width: 991.98px) {
+    .pb-10{
+    padding-bottom: 20rem;
+}
+.absolute{
+    top: -240px;
+}
+.footer{
+    padding-top: 6.5rem;
+}
+}
+@media (max-width: 495.98px) {
+    .contact {
+        padding:2rem!important;
+    }
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .contact {
+        padding:2rem!important;
+    }
+ }
+
+
+ /* CONTACTO */
+.contact{
+  background-color:#1E394E;
+  border-radius: 1rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+.contact h5{
+  color:white;
+}
+.contact p{
+  opacity:0.8;
+  font-size: small;
+}
+.contact h5:hover{
+  color:#FFC261!important;
+}
+
+.btn{
+    color: var(--contrast-color);
+    background: #1E394E;
+    font-size: 14px;
+    padding: 8px 25px;
+    border-radius: 50px;
+    transition: all 0.3s; 
+}
+.btn.aos-animate:hover {
+  transition: all 0.3s;  /* tu transición */ /* ejemplo de hover */
+  transition-delay: 0s!important;
+}
+.light:hover {
+    background-color: #fff;
+    color: #1e394e;
+}
+@media (max-width: 575.98px) {
+      .contact{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}

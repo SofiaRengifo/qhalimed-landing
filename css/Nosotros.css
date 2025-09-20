@@ -1,0 +1,78 @@
+.historia{
+  background: linear-gradient(180deg, #FFFFFF 14.58%, #1E394E 14.59%);
+}
+
+.historia h2{
+  color:#FFC261;
+  text-align:center;
+}
+.historia p{
+  color:white;
+  text-align:justify;
+}
+.historia img{
+  max-width:410px;
+}
+.caracteristicas{
+  justify-content: space-between;
+  gap: 1.4rem;
+  width: 100%;
+}
+.caracteristicas div{
+  background-color:#80D8B5;
+  padding:1.3rem;
+  border-radius:1rem;
+  text-align:center;
+}
+.caracteristicas h5{
+  margin-bottom:0;
+  font-size:1rem;
+}
+.caracteristicas i{
+  color:white;
+  margin-bottom:1.5rem;
+}
+.mision{
+  position:relative;
+}
+.mision h2{
+ background-color:#edf2f1;
+ text-align:center;
+ width: fit-content;
+ padding-inline:20px;
+ left: 50%;
+ transform: translateX(-50%);
+ position:absolute;
+}
+.mision-content{
+border: 2px solid #1E394E;
+border-radius:1rem;
+padding: 2.5rem;
+margin-top: 20px;
+height: calc(100% - 20px);
+}
+.mision-content p{
+text-align:justify;
+margin-bottom:0;
+}
+.valores span{
+color:#1E394E;
+font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .historia h2{
+    padding-top: 5rem;
+  }
+  .historia .order-lg-1{
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .historia{
+   background:#1E394E;
+   }
+    .historia h2{
+    padding-top: 2rem;
+  }
+ }

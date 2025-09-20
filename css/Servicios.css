@@ -1,0 +1,136 @@
+.nav-services{
+    background: linear-gradient(90deg, #80D8B5 0%, #02CFC0 100%);
+    border-radius: 15px;
+    justify-content: space-evenly;
+}
+.services-submenu{
+    margin-top:-30px;
+}
+.nav-services a{
+    color:white;
+    transition:all 0.3s;
+    padding: 7px 20px;
+    border-radius: 25px;
+}
+.nav-services a:hover,.nav-services .active {
+    background-color: white;
+    color: #7dd8b5;
+    transition:all 0.3s;
+    
+}
+
+
+.servicesDetails h1{
+background: linear-gradient(90deg, #69D6B7 0%, #FFC261 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+justify-self: center;
+width: fit-content;
+}
+.servicesDetails h2{
+    color:#80D8B5;
+    text-align:center;
+}
+.servicesDetails .definicion p,.consulta p {
+    text-align: justify;
+}
+.consulta{
+    background-color: #EDF2F1;
+    background-image: url('/img/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+.consulta .row{
+    padding-top:10rem;
+}
+
+.custom-li {
+  position: relative;
+  padding-left: 1.5em; /* espacio para el ícono */
+}
+
+.custom-li i {
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  color:#1e394e;
+}
+
+.custom-li::marker {
+  content: none;
+}
+.servicesDetails .imagen{
+    position:absolute;
+    width: 45%;
+    top: 233px;
+    height: calc(100% + 80px);
+}
+.servicesDetails img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.servicesDetails .agenda{
+    position:absolute;
+    top:43rem;
+    background-color: #fe6f63;
+    padding: 2rem;
+    margin-left: 8.4vw;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+    .nav-services{
+        flex-direction: column;
+    }
+    .services-submenu{
+        padding-inline: 2rem;
+    }
+    .servicesDetails .imagen{
+        height:200px;
+        width: 90%;
+        justify-self: center;
+        position:static;
+    }
+    .definicion{
+        margin-top:2rem;
+    }
+    .agenda {
+        margin-left:0!important;
+        left: 50%;
+        transform: translateX(-50%);
+        top:calc(100% + 20px)!important;
+    }
+    .agenda p{
+        display:none
+    }
+    .consulta{
+        margin-top:3rem;
+    }
+    .servicesDetails .py-6{
+        padding-top:3rem;
+        padding-bottom:1rem!important;
+    }
+}
+@media (min-width: 1200px) {
+    .services-submenu .gap-3{
+        gap:0!important;
+    }
+ }
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .agenda p{
+        display:none
+    }
+     .servicesDetails .imagen{
+        height:70%;
+     }
+     .servicesDetails .agenda{
+        top: 96%;
+        margin-left: 3vw;
+     }
+ }
