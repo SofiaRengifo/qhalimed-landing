@@ -38,7 +38,7 @@ width: fit-content;
 }
 .consulta{
     background-color: #EDF2F1;
-    background-image: url('/img/Vector.svg');
+    background-image: url('../img/Vector.svg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
