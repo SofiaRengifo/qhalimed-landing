@@ -459,13 +459,13 @@ a{
 }
 @media (max-width: 991.98px) {
     .pb-10{
-    padding-bottom: 20rem;
+    padding-bottom: 11rem;
 }
 .absolute{
-    top: -240px;
+    top: -130px;
 }
 .footer{
-    padding-top: 6.5rem;
+    padding-top: 10rem;
 }
 }
 @media (max-width: 495.98px) {
