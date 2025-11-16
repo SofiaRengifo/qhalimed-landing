@@ -1,5 +1,6 @@
 .historia{
   background: linear-gradient(180deg, #FFFFFF 14.58%, #1E394E 14.59%);
+  overflow-x: hidden;
 }
 
 .historia h2{
@@ -36,24 +37,30 @@
   position:relative;
 }
 .mision h2{
- background-color:#edf2f1;
  text-align:center;
  width: fit-content;
+ padding:5px;
  padding-inline:20px;
  left: 50%;
  transform: translateX(-50%);
  position:absolute;
+ background: #FFC261;
+ border-radius: 200px;
 }
 .mision-content{
-border: 2px solid #1E394E;
-border-radius:1rem;
 padding: 2.5rem;
 margin-top: 20px;
 height: calc(100% - 20px);
+
+background: rgba(255, 255, 255, 0.65);
+box-shadow: 0px 4px 4px rgba(30, 57, 78, 0.25);
+border-radius: 25px;
+
 }
 .mision-content p{
 text-align:justify;
 margin-bottom:0;
+color:#294357;
 }
 .valores span{
 color:#1E394E;
@@ -75,4 +82,8 @@ font-weight: bold;
     .historia h2{
     padding-top: 2rem;
   }
+ }
+
+ .back-mn{
+  background-color: rgb(128 216 181 / 80%);
  }

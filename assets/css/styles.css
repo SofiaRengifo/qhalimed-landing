@@ -449,14 +449,30 @@ a{
     top: -60px;
 }
 .bg-head{
-  background-size: cover;
-  background-position: top;
+  background-size: contain;
+  background-position: top right;
   background-repeat: no-repeat;
-  padding-top:5rem;
-  padding-bottom:5rem;
+  padding-top:6rem;
+  padding-bottom:6rem;
+  background-color: #ebf1f0;
 }
 .pb-10{
     padding-bottom: 10rem;
+}
+
+  .barra {
+    width: 4px;
+    background-color: #80D8B5;
+    border-radius: 2px;
+    z-index: 2;
+}
+@media (min-width: 1790px) {
+  h1{
+    font-size:3.2rem;
+  }
+  .bg-head{
+    background-position-x: calc(50% + 300px);
+  }
 }
 @media (max-width: 991.98px) {
     .pb-10{
@@ -480,7 +496,22 @@ a{
     }
  }
 
-
+@media (max-width: 1199.98px) {
+    .bg-head{
+    background-size: auto 100%;
+    background-position: top right;
+  }
+}
+@media (max-width: 1020.98px) {
+    .bg-head h1{
+        background: linear-gradient(90deg, rgba(235, 241, 240, 0) 0%, #EBF1F0 100%);
+        border-radius: 0px 60px 60px 0px;
+        padding-right: 1rem;
+    }
+    .bg-head{
+        background-position: top center;
+    }
+ }
  /* CONTACTO */
 .contact{
   background-color:#1E394E;

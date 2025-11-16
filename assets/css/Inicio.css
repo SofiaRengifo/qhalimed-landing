@@ -198,9 +198,6 @@
   }
 }
 @media (min-width: 1790px) {
-  h1{
-    font-size:3.2rem;
-  }
   .bg-slide{
     background-size:100% 40vw;
   }
