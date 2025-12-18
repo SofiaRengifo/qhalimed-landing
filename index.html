@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>QHALIMED  </title>
+    <title>QHALIMED </title>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/LOGO.ico">
 
     <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- CSS -->
@@ -18,521 +22,650 @@
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
 
     <link rel="stylesheet" href="./assets/css/Inicio.css">
-<style>
-    [data-aos="slide-up"] {
-  transform: translateY(200px); /* Más abajo (default ~100px) */
-}
-</style>
+    <style>
+        [data-aos="slide-up"] {
+            transform: translateY(200px);
+            /* Más abajo (default ~100px) */
+        }
+    </style>
 </head>
+
 <body>
     <header id="header" class="header">
-    <div class="topbar d-flex align-items-center">
-        <div class="container d-flex justify-content-center justify-content-md-between">
-            <div class="contact-info d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:contact@example.com">contact@example.com</a>
-                </div>
-                <div class="d-flex align-items-center ms-4">
-                    <i class="fa-solid fa-phone"></i>
-                    <a>+1 5589 55488 55</a>
-                </div>
-            </div>
-            <div class="social-links d-none d-md-flex align-items-center">
-                <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="branding d-flex align-items-center">
-        <div class="container position-relative d-flex align-items-center justify-content-between">
-            <a href="./index.html" class="logo d-flex align-items-center me-auto">
-                
-                <img src="./assets/img/LOGO QHALIMED.png" alt="Qhalimed Logo">
-            </a>
-            <i class="mobile-nav-toggle d-xl-none fa-solid fa-bars" onclick="const nav = document.getElementById('navmenu'); nav.classList.toggle('open');"></i>
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li>
-                        <a href="./index.html"class="active">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./Nosotros.html"class="">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="./servicios/Pediatria.html"class="">servicios</a>
-                    </li>
-                    <li>
-                        <a href="./Médicos.html"class="">Médicos</a>
-                    </li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <a class="cta-btn pulse-effect" href="#appointment">Agendar una cita</a>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-    <main>
-        
-<div id="splide" class="splide">
-    <div class="splide__track">
-        <ul class="splide__list">
-            <li class="splide__slide">
-                <div class="slide-inner" style="position: relative; height: 100%; overflow: hidden">
-                    <video class="slide-media" style="width: 100%;position:absolute;z-index: 1;top: 0;left: 0;" playsinline="" autoplay="" muted="" loop="">
-                        <source type="video/mp4" src="./assets/img/inicio-slider/portada1.mp4">
-                    </video>
-                    <div class="global-overlay"></div>
-                    <img class="global-svg" src="./assets/img/inicio-slider/decoration.svg" alt="" aria-hidden="true" />
-                    <div class="slide-content container d-flex align-items-center justify-content-start" style=" height: 100%; position: relative; z-index: 2;">
-                        <div class="text-content fade-in fade-right" style=" width: 45%; text-align: start;color: #fff; ">
-                            <h1 class="mb-3 slider-title"><span style="color: #FE6F63">Nuestros especialistas</span> tu mejor respaldo</h1>
-                            <p>Contamos con un equipo de médicos altamente capacitados en diversas especialidades, siempre enfocados en el bienestar de cada paciente.</p>
-                            <a class="btn mt-3" href="./Médicos.html">Ver más</a>
-                        </div>
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:contact@example.com">contact@example.com</a>
+                    </div>
+                    <div class="d-flex align-items-center ms-4">
+                        <i class="fa-solid fa-phone"></i>
+                        <a>+1 5589 55488 55</a>
                     </div>
                 </div>
-            </li>
-             <li class="splide__slide">
-                <div style="position: relative; height: 100%; overflow: hidden">
-                    <div class="slide-inner bg-slide slider2" style="background-image:url(./assets/img/inicio-slider/portada2.png);background-position: center top;height: 100%;">
-                        <div class="global-overlay"></div>
-                        <img class="global-svg" src="./assets/img/inicio-slider/decoration.svg" alt="" aria-hidden="true" />
-                        <div class="slide-content container d-flex align-items-center justify-content-start" style=" height: 100%; position: relative; z-index: 2;">
-                            <div class="text-content fade-in fade-right" style=" width: 40%; text-align: start;color: #fff; ">
-                                <h1 class="mb-3 slider-title"><span style="color: #FE6F63">Cuidamos</span> a los que más amas</h1>
-                                <p>En QHALIMED, estamos comprometidos para que tú y tus seres queridos estén siempre en las mejores manos.</p>
-
-                                <a class="btn mt-3" href="./servicios/Pediatria.html">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-            </li>
-            <li class="splide__slide">
-                <div style="position: relative; height: 100%; overflow: hidden">
-                    <div class="slide-inner bg-slide slider3" style="background-image:url(./assets/img/inicio-slider/portada3.jpg);background-position: center top;height: 100%;">
-                        <div class="global-overlay"></div>
-                        <img class="global-svg" src="./assets/img/inicio-slider/decoration.svg" alt="" aria-hidden="true" />
-                        <div class="slide-content container d-flex align-items-center justify-content-start" style=" height: 100%; position: relative; z-index: 2;">
-                            <div class="text-content fade-in fade-right" style=" width: 50%; text-align: start;color: #fff; ">
-                                <h1 class="mb-3 slider-title"><span style="color: #FE6F63">Infórmate</span> con nuestras publicaciones médicas</h1>
-                                <p>Accede a consejos de salud, noticias y novedades de la clínica.</p>
-
-                                <a class="btn mt-3" href="">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>5
-            </li>
-        </ul>
-    </div>
-
-</div>
-<div class="presentacion container py-7">
-    <div class="row">
-        <div class="col-12 col-md-6 order-md-2">
-            <h2 data-aos="fade-up">Comprometidos con tu bienestar, guiados por vocación</h2>
-            <p class="mt-4" style="text-align: justify;">Más que una clínica, somos un espacio donde la salud se cuida con vocación, respeto y responsabilidad. En QHALIMED, trabajamos día a día por mejorar la calidad de vida de nuestros pacientes y fortalecer el vínculo entre médico y familia.</p>
-            <div class="d-flex gap-4">
-                <div class="caracteristicas"><i class="fa-solid fa-laptop-medical"></i></div><span>Actualización constante</span>
-                <div class="caracteristicas"> <i class="fa-solid fa-user-doctor"></i></div><span>Profesionales capacitados</span>
             </div>
-            <a data-aos="zoom-in" class="btn mt-4" href="./Nosotros.html" data-discover="true">Sobre Nosotros</a>
         </div>
-        <div class="col-12 col-md-6 order-md-1 imagen">
-            <div class="h-100" style="background-image:url(./assets/img/fondoEmergency.jpg);width: 88%;">
-                <div class="count" data-aos-delay="300" data-aos="slide-up">
-                    <h5>Bienvenido a Qhalimed</h5>
-                </div>
-            </div>
-            <div class="video">
-                <a href="">
-                    <i class="fa-solid fa-play"></i>
+        <div class="branding d-flex align-items-center">
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="./index.html" class="logo d-flex align-items-center me-auto">
+
+                    <img src="./assets/img/LOGO QHALIMED.png" alt="Qhalimed Logo">
                 </a>
+                <i class="mobile-nav-toggle d-xl-none fa-solid fa-bars"
+                    onclick="const nav = document.getElementById('navmenu'); nav.classList.toggle('open');"></i>
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li>
+                            <a href="./index.html" class="active">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./Nosotros.html" class="">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./servicios/Pediatria.html" class="">servicios</a>
+                        </li>
+                        <li>
+                            <a href="./Médicos.html" class="">Médicos</a>
+                        </li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <a class="cta-btn pulse-effect" href="#appointment">Agendar una cita</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div id="splide" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="slide-inner" style="position: relative; height: 100%; overflow: hidden">
+                            <video class="slide-media" style="width: 100%;position:absolute;z-index: 1;top: 0;left: 0;"
+                                playsinline="" autoplay="" muted="" loop="">
+                                <source type="video/mp4" src="./assets/img/inicio-slider/portada1.mp4">
+                            </video>
+                            <div class="global-overlay"></div>
+                            <img class="global-svg" src="./assets/img/inicio-slider/decoration.svg" alt=""
+                                aria-hidden="true" />
+                            <div class="slide-content container d-flex align-items-center justify-content-start"
+                                style=" height: 100%; position: relative; z-index: 2;">
+                                <div class="text-content fade-in fade-right"
+                                    style=" width: 45%; text-align: start;color: #fff; ">
+                                    <h1 class="mb-3 slider-title"><span style="color: #FE6F63">Nuestros
+                                            especialistas</span> tu mejor respaldo</h1>
+                                    <p>Contamos con un equipo de médicos altamente capacitados en diversas
+                                        especialidades, siempre enfocados en el bienestar de cada paciente.</p>
+                                    <a class="btn mt-3" href="./Médicos.html">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div style="position: relative; height: 100%; overflow: hidden">
+                            <div class="slide-inner bg-slide slider2"
+                                style="background-image:url(./assets/img/inicio-slider/portada2.png);background-position: center top;height: 100%;">
+                                <div class="global-overlay"></div>
+                                <img class="global-svg" src="./assets/img/inicio-slider/decoration.svg" alt=""
+                                    aria-hidden="true" />
+                                <div class="slide-content container d-flex align-items-center justify-content-start"
+                                    style=" height: 100%; position: relative; z-index: 2;">
+                                    <div class="text-content fade-in fade-right"
+                                        style=" width: 40%; text-align: start;color: #fff; ">
+                                        <h1 class="mb-3 slider-title"><span style="color: #FE6F63">Cuidamos</span> a los
+                                            que más amas</h1>
+                                        <p>En QHALIMED, estamos comprometidos para que tú y tus seres queridos estén
+                                            siempre en las mejores manos.</p>
+
+                                        <a class="btn mt-3" href="./servicios/Pediatria.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div style="position: relative; height: 100%; overflow: hidden">
+                            <div class="slide-inner bg-slide slider3"
+                                style="background-image:url(./assets/img/inicio-slider/portada3.jpg);background-position: center top;height: 100%;">
+                                <div class="global-overlay"></div>
+                                <img class="global-svg" src="./assets/img/inicio-slider/decoration.svg" alt=""
+                                    aria-hidden="true" />
+                                <div class="slide-content container d-flex align-items-center justify-content-start"
+                                    style=" height: 100%; position: relative; z-index: 2;">
+                                    <div class="text-content fade-in fade-right"
+                                        style=" width: 50%; text-align: start;color: #fff; ">
+                                        <h1 class="mb-3 slider-title"><span style="color: #FE6F63">Infórmate</span> con
+                                            nuestras publicaciones médicas</h1>
+                                        <p>Accede a consejos de salud, noticias y novedades de la clínica.</p>
+
+                                        <a class="btn mt-3" href="">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>5
+                    </li>
+                </ul>
             </div>
 
         </div>
-    </div>
-</div>
-<div class="service">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 pt-4">
-                <h2 data-aos="fade-up">Nuestros <span style=" color: #FE6F63 ">servicios</span></h2>
-                <p class="pe-lg-3 mt-3">Te ofrecemos una atención médica completa, con especialidades y procedimientos pensados para cuidar tu salud en cada etapa de la vida.</p>
-                <a data-aos="zoom-in" class="btn mt-3" href="./servicios/Pediatria.html" data-discover="true">Ver servicios</a>
+        <div class="presentacion container py-7">
+            <div class="row">
+                <div class="col-12 col-md-6 order-md-2">
+                    <h2 data-aos="fade-up">Comprometidos con tu bienestar, guiados por vocación</h2>
+                    <p class="mt-4" style="text-align: justify;">Más que una clínica, somos un espacio donde la salud se
+                        cuida con vocación, respeto y responsabilidad. En QHALIMED, trabajamos día a día por mejorar la
+                        calidad de vida de nuestros pacientes y fortalecer el vínculo entre médico y familia.</p>
+                    <div class="d-flex gap-4">
+                        <div class="caracteristicas"><i class="fa-solid fa-laptop-medical"></i></div><span>Actualización
+                            constante</span>
+                        <div class="caracteristicas"> <i class="fa-solid fa-user-doctor"></i></div><span>Profesionales
+                            capacitados</span>
+                    </div>
+                    <a data-aos="zoom-in" class="btn mt-4" href="./Nosotros.html" data-discover="true">Sobre
+                        Nosotros</a>
+                </div>
+                <div class="col-12 col-md-6 order-md-1 imagen">
+                    <div class="h-100" style="background-image:url(./assets/img/fondoEmergency.jpg);width: 88%;">
+                        <div class="count" data-aos-delay="300" data-aos="slide-up">
+                            <h5>Bienvenido a Qhalimed</h5>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <a href="">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-lg-9" style="padding-top: 4rem;">
-                <h5 data-aos="zoom-in-up" class="eslogan d-none d-lg-block ms-3">Conoce todo lo que tenemos para cuidar de ti</h5>
-                <div id="serviceSlide" class="splide">
+        </div>
+        <div class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 pt-4">
+                        <h2 data-aos="fade-up">Nuestros <span style=" color: #FE6F63 ">servicios</span></h2>
+                        <p class="pe-lg-3 mt-3">Te ofrecemos una atención médica completa, con especialidades y
+                            procedimientos pensados para cuidar tu salud en cada etapa de la vida.</p>
+                        <a data-aos="zoom-in" class="btn mt-3" href="./servicios/Pediatria.html"
+                            data-discover="true">Ver servicios</a>
+                    </div>
+                    <div class="col-lg-9" style="padding-top: 4rem;">
+                        <h5 data-aos="zoom-in-up" class="eslogan d-none d-lg-block ms-3">Conoce todo lo que tenemos para
+                            cuidar de ti</h5>
+                        <div id="serviceSlide" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="service-box text-center">
+                                            <i class="fa-solid fa-baby mb-2"></i>
+                                            <p>Pediatría</p>
+                                            <span>Cuidado médico para niños y adolescentes en cada etapa de su
+                                                desarrollo.</span>
+                                            <a href="./servicios/Pediatria.html"><i
+                                                    class="ms-2 fa-solid fa-circle-right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-box text-center">
+                                            <i class="fa-solid fa-venus mb-2"></i>
+                                            <p>Ginecología</p>
+                                            <span>Salud femenina integral: desde prevención hasta tratamientos
+                                                especializados.</span>
+                                            <a href="./servicios/Ginecologia.html"><i
+                                                    class="ms-2 fa-solid fa-circle-right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-box text-center">
+                                            <img src="./assets/img/iconos/endocrinologia.png" alt="Endocrinología">
+                                            <p>Endocrinología</p>
+                                            <span>Especialistas en el tratamiento de diabetes, tiroides y trastornos
+                                                hormonales.</span>
+                                            <a href="./servicios/Endocrinologia.html"><i
+                                                    class="ms-2 fa-solid fa-circle-right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-box text-center">
+                                            <img src="./assets/img/iconos/neurologia.png" alt="neurologia">
+                                            <p>Neurologia</p>
+                                            <span>Atención de trastornos del cerebro, médula espinal y nervios, como
+                                                migrañas, epilepsia,etc.</span>
+                                            <a href="./servicios/Neurologia.html"><i
+                                                    class="ms-2 fa-solid fa-circle-right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-box text-center">
+                                            <img src="./assets/img/iconos/hueso.png" alt="hueso">
+                                            <p>Traumatologia</p>
+                                            <span>Atención integral para prevenir y tratar lesiones óseas, articulares y
+                                                musculares.</span>
+                                            <a href="./servicios/Traumatologia.html"><i
+                                                    class="ms-2 fa-solid fa-circle-right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-box text-center">
+                                            <img src="./assets/img/iconos/ecografias.png" alt="ecografía">
+                                            <p>Ecografías</p>
+                                            <span>Estudios ecográficos precisos y confiables, apoyando el diagnóstico
+                                                médico.</span>
+                                            <a href="./servicios/Ecografías.html"><i
+                                                    class="ms-2 fa-solid fa-circle-right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-box text-center">
+                                            <i class="fa-solid fa-stethoscope mb-2"></i>
+                                            <p>Medicina interna</p>
+                                            <span>Manejo global de la salud del adulto, desde la prevención hasta el
+                                                tratamiento.</span>
+                                            <a href="./servicios/MedicinaInterna.html"><i
+                                                    class="ms-2 fa-solid fa-circle-right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-box text-center">
+                                            <img src="./assets/img/iconos/reumatologia.png" alt="Reumatología">
+                                            <p>Reumatología</p>
+                                            <span>Atención a enfermedades articulares, musculares y autoinmunes como
+                                                artritis y lupus.</span>
+                                            <a href="./servicios/Reumatología.html"><i
+                                                    class="ms-2 fa-solid fa-circle-right"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="emergency" style=" margin-top: -100px ">
+            <div class="container py-6">
+                <div class="text-center py-5">
+                    <h2 data-aos="fade-up">Tu salud, estés donde estés</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">Con nuestra plataforma de <b
+                            style="color: #FFC261">telemedicina</b>, puedes acceder a consultas médicas seguras y
+                        personalizadas desde tu hogar, con la misma calidad y calidez que en una visita presencial.</p>
+                    <a data-aos="zoom-in" data-aos-delay="200" class="btn mt-3" href="/qhalimed-landing/servicios"
+                        data-discover="true">Agendar consulta en línea</a>
+                </div>
+            </div>
+        </div>
+        <div class="otros-servicios" style=" margin-top: -100px">
+            <div class="container py-7">
+                <div class="row text-center align-items-stretch" style="overflow-y: hidden;">
+                    <div class="col-lg-6 mt-3">
+                        <div class="justify-content-end d-flex box h-100"
+                            style="background-image:url(./assets/img/Group12.jpg);background-size: cover;background-position-x: center;border-color: #80D8B5;">
+                            <div class="content">
+                                <h2 data-aos="fade-up" class="px-2" style="color: #00989D;">Delivery de farmacia
+                                </h2>
+                                <p class="my-3">Envia tus medicamentos a tu hogar de forma rápida y segura.</p>
+                                <a data-aos="zoom-in" class="btn bg-green mt-2" href="" data-discover="true">Solicitar
+                                    envío</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <div class="justify-content-start d-flex box h-100"
+                            style="background-image:url(./assets/img/Group13.jpg);background-size: cover;background-position-x: center;border-color: #FE6F63;">
+                            <div class="content">
+                                <h2 data-aos="fade-up" class="px-2" style="color: #DA5C52;">Médicos a domicilio
+                                </h2>
+                                <p class="my-3">Si no puedes o prefieres no salir, podemos atenderte en tu hogar.</p>
+                                <a data-aos="zoom-in" class="btn bg-pink mt-2" href="" data-discover="true">Solicitar
+                                    visita</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3 mt-lg-4">
+                        <div class="justify-content-end d-flex box h-100 mh-box"
+                            style="background-image:url(./assets/img/Group11.jpg);background-size: cover;background-position-x: center;border-color: #FFC261;">
+                            <div class="content">
+                                <h2 data-aos="fade-up" class="px-2" style="color: #E5920D;">Servicio de ambulancia
+                                </h2>
+                                <p class="my-3">Si necesitas atención médica urgente, puedes solicitar el servicio de
+                                    ambulancia.</p>
+                                <a data-aos="zoom-in" class="btn bg-yellow mt-2" href="" data-discover="true">Solicitar
+                                    servicio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="staff">
+            <div class="container py-7">
+                <div class="row text-center" style="overflow-y: hidden;">
+                    <div class="col-lg-6 p-lg-5 order-lg-2">
+                        <h2 data-aos="fade-up" class="w-70" style="justify-self: center;">Un <span
+                                style=" color: #fe6f63 ">equipo médico </span>a tu servicio</h2>
+                        <a data-aos="zoom-in" class="btn mt-2" href="./Médicos.html" data-discover="true">Conoce a
+                            nuestro
+                            staff</a>
+                        <p class="mt-3 mb-0">Nuestro equipo médico combina experiencia, vocación y actualización
+                            constante
+                            para ofrecerte diagnósticos precisos y tratamientos efectivos.</p>
+                    </div>
+                    <div class="col-6 col-lg-3 pe-0 order-lg-1"
+                        style="border-radius: 60px 0px 0px 60px;background: #41d3bba6;">
+                        <div class="circle" style="background: linear-gradient(180deg, #00CFC1 0%, #83e2d3  100%);">
+                            <h1>+10</h1>
+                        </div>
+                        <span data-aos="slide-left" data-aos-easing="linear" class="p-2"
+                            style=" border-radius: 20px 0px 0px 20px;">Médicos expertos</span>
+                    </div>
+
+                    <div class="col-6 col-lg-3 ps-0 order-lg-3"
+                        style="border-radius: 0px 60px 60px 0px;background: #80d8b5a6;">
+                        <div class="circle" style="background: linear-gradient(180deg, #5ad3b2 0%, #ace6cf 100%);">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <span data-aos="slide-right" data-aos-easing="linear" class="p-2"
+                            style="border-radius: 0px 20px 20px 0px;">Atención Personalizada</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="blog">
+            <div class="container py-7 pb-10">
+                <div class="title-blog">
+                    <h2 data-aos="fade-up" class="w-70">Consejos de <span style=" color: #fe6f63 ">salud y
+                            novedades</span></h2>
+                    <div class="d-lg-flex justify-content-between">
+                        <p data-aos="fade-up" data-aos-delay="100" class="w-70 mt-3">Infórmate con artículos escritos
+                            por nuestros especialistas. Encuentra recomendaciones, noticias médicas y tips para cuidar
+                            tu salud y la de tu familia.</p>
+                        <a data-aos="zoom-in" class="btn" style="height: fit-content" href="/qhalimed-landing/servicios"
+                            data-discover="true">Descubre más aquí</a>
+                    </div>
+                </div>
+
+                <div id="blogSlide" class="splide blog-slider mt-4">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div class="service-box text-center">
-                                    <i class="fa-solid fa-baby mb-2"></i>
-                                    <p>Pediatría</p>
-                                    <span>Cuidado médico para niños y adolescentes en cada etapa de su desarrollo.</span>
-                                    <a href="./servicios/Pediatria.html"><i class="ms-2 fa-solid fa-circle-right"></i></a>
+                                <div class="blog-card">
+                                    <div class="card-content">
+                                        <img src="./assets/img/blog/news1.jpg" alt="">
+                                        <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
+                                        <div class="blog-text">
+                                            <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres
+                                            </h5>
+                                            <p>¿Existe igualdad de género en los infartos? La respuesta corta es no.
+                                                Esto es lo que necesitas saber...</p>
+                                            <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="service-box text-center">
-                                    <i class="fa-solid fa-venus mb-2"></i>
-                                    <p>Ginecología</p>
-                                    <span>Salud femenina integral: desde prevención hasta tratamientos especializados.</span>
-                                    <a href="./servicios/Ginecologia.html"><i class="ms-2 fa-solid fa-circle-right"></i></a>
+                                <div class="blog-card">
+                                    <div class="card-content">
+                                        <img src="./assets/img/blog/news2.jpg" alt="">
+                                        <div class="categoria"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="blog-text">
+                                            <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres
+                                            </h5>
+                                            <p>¿Existe igualdad de género en los infartos? La respuesta corta es no.
+                                                Esto es lo que necesitas saber...</p>
+                                            <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="service-box text-center">
-                                    <img src="./assets/img/iconos/endocrinologia.png" alt="Endocrinología">
-                                    <p>Endocrinología</p>
-                                    <span>Especialistas en el tratamiento de diabetes, tiroides y trastornos hormonales.</span>
-                                    <a href="./servicios/Endocrinologia.html"><i class="ms-2 fa-solid fa-circle-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="service-box text-center">
-                                    <img src="./assets/img/iconos/neurologia.png" alt="neurologia">
-                                    <p>Neurologia</p>
-                                    <span>Atención de trastornos del cerebro, médula espinal y nervios, como migrañas, epilepsia,etc.</span>
-                                    <a href="./servicios/Neurologia.html"><i class="ms-2 fa-solid fa-circle-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="service-box text-center">
-                                    <img src="./assets/img/iconos/hueso.png" alt="hueso">
-                                    <p>Traumatologia</p>
-                                    <span>Atención integral para prevenir y tratar lesiones óseas, articulares y musculares.</span>
-                                    <a href="./servicios/Traumatologia.html"><i class="ms-2 fa-solid fa-circle-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="service-box text-center">
-                                    <img src="./assets/img/iconos/ecografias.png" alt="ecografía">
-                                    <p>Ecografías</p>
-                                    <span>Estudios ecográficos precisos y confiables, apoyando el diagnóstico médico.</span>
-                                    <a href="./servicios/Ecografías.html"><i class="ms-2 fa-solid fa-circle-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="service-box text-center">
-                                    <i class="fa-solid fa-stethoscope mb-2"></i>
-                                    <p>Medicina interna</p>
-                                    <span>Manejo global de la salud del adulto, desde la prevención hasta el tratamiento.</span>
-                                    <a href="./servicios/MedicinaInterna.html"><i class="ms-2 fa-solid fa-circle-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="service-box text-center">
-                                    <img src="./assets/img/iconos/reumatologia.png" alt="Reumatología">
-                                    <p>Reumatología</p>
-                                    <span>Atención a enfermedades articulares, musculares y autoinmunes como artritis y lupus.</span>
-                                    <a href="./servicios/Reumatología.html"><i class="ms-2 fa-solid fa-circle-right"></i></a>
+                                <div class="blog-card">
+                                    <div class="card-content">
+                                        <img src="./assets/img/blog/news3.jpg" alt="">
+                                        <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
+                                        <div class="blog-text">
+                                            <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres
+                                            </h5>
+                                            <p>¿Existe igualdad de género en los infartos? La respuesta corta es no.
+                                                Esto es lo que necesitas saber...</p>
+                                            <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
+                    <div class="dots-container" id="blogSlideDots"></div>
                 </div>
 
             </div>
         </div>
-    </div>
-
-
-</div>
-
-<div class="emergency" style=" margin-top: -100px ">
-    <div class="container py-6">
-        <div class="text-center py-5">
-            <h2 data-aos="fade-up">Tu salud, estés donde estés</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Con nuestra plataforma de <b style="color: #FFC261">telemedicina</b>, puedes acceder a consultas médicas seguras y personalizadas desde tu hogar, con la misma calidad y calidez que en una visita presencial.</p>
-            <a data-aos="zoom-in" data-aos-delay="200" class="btn mt-3" href="/qhalimed-landing/servicios" data-discover="true">Agendar consulta en línea</a>
-        </div>
-    </div>
-</div>
-<div class="staff" style=" margin-top: -100px">
-    <div class="container py-7">
-        <div class="row text-center" style="overflow-y: hidden;">
-            <div class="col-lg-6 p-lg-5 order-lg-2">
-                <h2 data-aos="fade-up" class="w-70" style="justify-self: center;">Un <span style=" color: #fe6f63 ">equipo médico </span>a tu servicio</h2>
-                <a data-aos="zoom-in" class="btn mt-2" href="./Médicos.html" data-discover="true">Conoce a nuestro staff</a>
-                <p class="mt-3 mb-0">Nuestro equipo médico combina experiencia, vocación y actualización constante para ofrecerte diagnósticos precisos y tratamientos efectivos.</p>
-            </div>
-            <div class="col-6 col-lg-3 pe-0 order-lg-1" style="border-radius: 60px 0px 0px 60px;background: #41d3bba6;">
-                <div class="circle" style="background: linear-gradient(180deg, #00CFC1 0%, #83e2d3  100%);">
-                    <h1>+10</h1>
-                </div>
-                <span data-aos="slide-left" data-aos-easing="linear" class="p-2" style=" border-radius: 20px 0px 0px 20px;">Médicos expertos</span>
-            </div>
-
-            <div class="col-6 col-lg-3 ps-0 order-lg-3" style="border-radius: 0px 60px 60px 0px;background: #80d8b5a6;">
-                <div class="circle" style="background: linear-gradient(180deg, #5ad3b2 0%, #ace6cf 100%);">
-                    <i class="fa-solid fa-user-doctor"></i>
-                </div>
-                <span data-aos="slide-right" data-aos-easing="linear" class="p-2" style="border-radius: 0px 20px 20px 0px;">Atención Personalizada</span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="blog">
-    <div class="container pt-5 pt-lg-0 pb-10">
-        <div class="title-blog">
-            <h2 data-aos="fade-up" class="w-70">Consejos de <span style=" color: #fe6f63 ">salud y novedades</span></h2>
-            <div class="d-lg-flex justify-content-between">
-                <p data-aos="fade-up" data-aos-delay="100" class="w-70 mt-3">Infórmate con artículos escritos por nuestros especialistas. Encuentra recomendaciones, noticias médicas y tips para cuidar tu salud y la de tu familia.</p>
-                <a data-aos="zoom-in" class="btn" style="height: fit-content" href="/qhalimed-landing/servicios" data-discover="true">Descubre más aquí</a>
-            </div>
-        </div>
-
-        <div id="blogSlide" class="splide blog-slider mt-4">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <div class="blog-card">
-                            <div class="card-content">
-                                <img src="./assets/img/blog/news1.jpg" alt="">
-                                <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
-                                <div class="blog-text">
-                                    <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres</h5>
-                                    <p>¿Existe igualdad de género en los infartos? La respuesta corta es no. Esto es lo que necesitas saber...</p>
-                                    <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="blog-card">
-                            <div class="card-content">
-                                <img src="./assets/img/blog/news2.jpg" alt="">
-                                <div class="categoria"><i class="fa-solid fa-heart"></i></div>
-                                <div class="blog-text">
-                                    <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres</h5>
-                                    <p>¿Existe igualdad de género en los infartos? La respuesta corta es no. Esto es lo que necesitas saber...</p>
-                                    <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="blog-card">
-                            <div class="card-content">
-                                <img src="./assets/img/blog/news3.jpg" alt="">
-                                <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
-                                <div class="blog-text">
-                                    <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres</h5>
-                                    <p>¿Existe igualdad de género en los infartos? La respuesta corta es no. Esto es lo que necesitas saber...</p>
-                                    <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="dots-container" id="blogSlideDots"></div>
-        </div>
-
-    </div>
-</div>
     </main>
     <!-- Footer -->
     <div class='position-relative'>
         <div class="container absolute">
-          <div class="contact">
-          <div class="row justify-content-center text-white">
-            <div class="col-lg-4 text-center">
-              <div class="media">
-                <div class="media-body ml-3"><a class="text-light fs-1 font-weight-semi-bold mb-0" href="tel:12345678910"><h5>+(123) 456 78910</h5></a>
-                  <p class="fs--1 mb-0">¿Tienes alguna pregunta? Llámanos ahora</p>
+            <div class="contact">
+                <div class="row justify-content-center text-white">
+                    <div class="col-lg-4 text-center">
+                        <div class="media">
+                            <div class="media-body ml-3"><a class="text-light fs-1 font-weight-semi-bold mb-0"
+                                    href="tel:12345678910">
+                                    <h5>+(123) 456 78910</h5>
+                                </a>
+                                <p class="fs--1 mb-0">¿Tienes alguna pregunta? Llámanos ahora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center mt-3 mt-lg-0">
+                        <div class="media">
+                            <div class="media-body ml-3"><a class="text-white fs-1 font-weight-semi-bold mb-0"
+                                    href="mailto:help@qhalimed.com">
+                                    <h5>ayuda@qhalimed.com</h5>
+                                </a>
+                                <p class="fs--1 mb-0">¿Necesitas ayuda? Escríbenos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center mt-3 mt-lg-0">
+                        <div class="media">
+                            <div class="media-body ml-3">
+                                <h5>Lun – Sáb 07:00 – 21:00</h5>
+                                <p class="fs--1 mb-0">Horario de atención</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-4 text-center mt-3 mt-lg-0">
-              <div class="media">
-                <div class="media-body ml-3"><a class="text-white fs-1 font-weight-semi-bold mb-0" href="mailto:help@qhalimed.com"><h5>ayuda@qhalimed.com</h5></a>
-                  <p class="fs--1 mb-0">¿Necesitas ayuda? Escríbenos.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 text-center mt-3 mt-lg-0">
-              <div class="media">
-                <div class="media-body ml-3">
-                  <h5>Lun – Sáb 07:00 – 21:00</h5>
-                  <p class="fs--1 mb-0">Horario de atención</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
         </div>
 
 
         <div class='footer'>
-          <div class='container pb-4 d-flex flex-column flex-md-row justify-content-between'>
-            <div>
-              <h4>QHALIMED</h4>
-              <p class='mb-md-0'>Cuidamos tu salud con profesionalismo y calidez.</p>
-            </div>
-            <div class='redes-sociales d-flex gap-4 flex-wrap'>
-              <div><i class="fa-brands fa-youtube"></i></div>
-              <div><i class="fa-brands fa-facebook"></i></div>
-              <div><i class="fa-brands fa-instagram"></i></div>
+            <div class='container pb-4 d-flex flex-column flex-md-row justify-content-between'>
+                <div>
+                    <h4>QHALIMED</h4>
+                    <p class='mb-md-0'>Cuidamos tu salud con profesionalismo y calidez.</p>
+                </div>
+                <div class='redes-sociales d-flex gap-4 flex-wrap'>
+                    <div><i class="fa-brands fa-youtube"></i></div>
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
 
+                </div>
             </div>
-          </div>
-          <div class='border-top pt-3 text-center'><p class='mb-0'>© 2025 QHALIMED. Todos los derechos reservados.</p></div>
+            <div class='border-top pt-3 text-center'>
+                <p class='mb-0'>© 2025 QHALIMED. Todos los derechos reservados.</p>
+            </div>
         </div>
-      </div>   
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script>
+    <script>
         AOS.init({
-            duration: 900 
+            duration: 900
         });
-        </script>
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
     <!-- Splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script>
         const { AutoScroll } = window.splide.Extensions;
     </script>
     <!-- slick -->
-    
+
     <script>
-    const splide1 = new Splide('#splide', {
-        type: 'loop'
-        , perPage: 1
-        , autoplay: true
-        , interval: 3000
-        , pauseOnHover: false
-        , pauseOnFocus: false
-        , pagination: false
-    , });
-
-    splide1.on('moved', function(newIndex) {
-        const activeSlide = splide1.Components.Elements.slides[newIndex];
-        if (activeSlide) {
-            const animatedContent = activeSlide.querySelector('.text-content');
-            if (animatedContent) {
-                const animationClasses = [...animatedContent.classList].filter(cls =>
-                    cls.startsWith('fade')
-                );
-                animationClasses.forEach(cls => animatedContent.classList.remove(cls));
-                void animatedContent.offsetWidth;
-                animationClasses.forEach(cls => animatedContent.classList.add(cls));
-            }
-        }
-    });
-
-    splide1.mount();
-
-    let autoplayInterval = 6000;
-    let splide1Timer = setInterval(() => {
-        splide1.go('>');
-    }, autoplayInterval);
-
-    const splide2 = new Splide('#serviceSlide', {
-        type: 'loop'
-        , drag: 'free'
-        , focus: 2
-            // ,focus  : 'center'
-        , pagination: false
-        , perPage: 4
-        , autoScroll: {
-            speed: 1
-        , }
-        , breakpoints: {
-            1200: {
-                perPage: 4
-            }
-            , 940: {
-                perPage: 3,
-                focus: 'center',
-            }
-            , 675: {
-                perPage: 2,
-                focus: 'center',
-            }
-        , }
-    , });
-    splide2.mount({
-        AutoScroll
-    });
-
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-        const splide3 = new Splide('#blogSlide', {
-
-            perPage: 3
-            , arrows: false
+        const splide1 = new Splide('#splide', {
+            type: 'loop'
+            , perPage: 1
+            , autoplay: true
+            , interval: 3000
+            , pauseOnHover: false
+            , pauseOnFocus: false
             , pagination: false
+            ,
+        });
+
+        splide1.on('moved', function (newIndex) {
+            const activeSlide = splide1.Components.Elements.slides[newIndex];
+            if (activeSlide) {
+                const animatedContent = activeSlide.querySelector('.text-content');
+                if (animatedContent) {
+                    const animationClasses = [...animatedContent.classList].filter(cls =>
+                        cls.startsWith('fade')
+                    );
+                    animationClasses.forEach(cls => animatedContent.classList.remove(cls));
+                    void animatedContent.offsetWidth;
+                    animationClasses.forEach(cls => animatedContent.classList.add(cls));
+                }
+            }
+        });
+
+        splide1.mount();
+
+        let autoplayInterval = 6000;
+        let splide1Timer = setInterval(() => {
+            splide1.go('>');
+        }, autoplayInterval);
+
+        const splide2 = new Splide('#serviceSlide', {
+            type: 'loop'
+            , drag: 'free'
+            , focus: 2
+            // ,focus  : 'center'
+            , pagination: false
+            , perPage: 4
+            , autoScroll: {
+                speed: 1
+                ,
+            }
             , breakpoints: {
-                992: {
-                    perPage: 2
+                1200: {
+                    perPage: 4
                 }
-                , 768: {
-                    perPage: 1
+                , 940: {
+                    perPage: 3,
+                    focus: 'center',
                 }
-            , }
+                , 675: {
+                    perPage: 2,
+                    focus: 'center',
+                }
+                ,
+            }
+            ,
         });
-        splide3.mount();
-
-        const track = document.querySelector('#blogSlide .splide__list');
-        const originalSlides = Array.from(document.querySelectorAll('#blogSlide .splide__slide'));
-        const slides = [...originalSlides];
-        const dotsContainer = document.getElementById('blogSlideDots');
-
-
-        originalSlides.forEach(slide => {
-            const clone = slide.cloneNode(true);
-            clone.removeAttribute('style');
-            clone.classList.add('slide-clone');
-            track.appendChild(clone);
+        splide2.mount({
+            AutoScroll
         });
 
-        let currentIndex = 0;
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const splide3 = new Splide('#blogSlide', {
+
+                perPage: 3
+                , arrows: false
+                , pagination: false
+                , breakpoints: {
+                    992: {
+                        perPage: 2
+                    }
+                    , 768: {
+                        perPage: 1
+                    }
+                    ,
+                }
+            });
+            splide3.mount();
+
+            const track = document.querySelector('#blogSlide .splide__list');
+            const originalSlides = Array.from(document.querySelectorAll('#blogSlide .splide__slide'));
+            const slides = [...originalSlides];
+            const dotsContainer = document.getElementById('blogSlideDots');
 
 
-        originalSlides.forEach((_, index) => {
-            const dot = document.createElement('span');
-            dot.classList.add('dot');
-            if (index === 0) dot.classList.add('active');
-
-            dot.addEventListener('click', () => {
-                currentIndex = index;
-                goToSlide(currentIndex);
+            originalSlides.forEach(slide => {
+                const clone = slide.cloneNode(true);
+                clone.removeAttribute('style');
+                clone.classList.add('slide-clone');
+                track.appendChild(clone);
             });
 
-            dotsContainer.appendChild(dot);
+            let currentIndex = 0;
+
+
+            originalSlides.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    goToSlide(currentIndex);
+                });
+
+                dotsContainer.appendChild(dot);
+            });
+
+            function updateDots() {
+                const dots = dotsContainer.querySelectorAll('.dot');
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex % originalSlides.length));
+            }
+
+            function goToSlide(index) {
+                const offset = slides[0].offsetWidth * index;
+                track.style.transition = 'transform 0.6s ease';
+                track.style.transform = `translateX(-${offset}px)`;
+                updateDots();
+            }
+
+            const intervalTime = 3000;
+            let sliderInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                goToSlide(currentIndex);
+            }, intervalTime);
         });
 
-        function updateDots() {
-            const dots = dotsContainer.querySelectorAll('.dot');
-            dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex % originalSlides.length));
-        }
-
-        function goToSlide(index) {
-            const offset = slides[0].offsetWidth * index;
-            track.style.transition = 'transform 0.6s ease';
-            track.style.transform = `translateX(-${offset}px)`;
-            updateDots();
-        }
-
-        const intervalTime = 3000;
-        let sliderInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            goToSlide(currentIndex);
-        }, intervalTime);
-    });
-
-</script>
+    </script>
 </body>
+
 </html>
