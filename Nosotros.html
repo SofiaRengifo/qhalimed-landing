@@ -28,6 +28,13 @@
 </head>
 
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <symbol id="icon-cruz" viewBox="0 0 108 109">
+            <path
+                d="M54.2502 0.206332C62.6111 0.14937 70.953 3.87237 70.9049 11.5463V37.3865H93.8422C112.622 37.4423 112.267 70.777 93.8422 70.8328H70.9049V73.7691C70.8693 77.0774 68.3065 78.3592 66.7871 78.3422C65.2675 78.3251 62.9188 77.0534 62.9807 73.7683L62.9205 65.2513L63.1498 64.117C63.6651 62.9 64.8719 62.0461 66.2781 62.0461H92.3411C102.747 61.9924 102.922 45.4886 92.8328 45.4415H66.0858C64.1733 45.4413 62.623 43.8898 62.623 41.976L62.5755 41.817C62.616 33.0684 62.6565 22.4823 62.6971 14.3459C62.7431 9.99196 58.5784 7.77045 54.3784 7.74679C50.1783 7.72293 45.9425 9.89691 45.8464 14.3338C45.7987 21.8785 45.8762 33.5462 45.86 42.1219L45.6006 43.5203C45.257 44.3316 44.6061 44.9815 43.7938 45.3246L42.4939 45.5867H15.0224C4.69776 45.7363 5.19333 62.1804 15.4951 62.1846H42.253C44.1653 62.2576 45.7155 63.8091 45.7155 65.7228L45.7332 66.8983C45.7022 74.9284 45.5541 87.3693 45.5934 92.7531C45.6464 102.167 62.8635 102.665 62.9106 93.1888C62.9264 89.7066 66.0037 89.2903 66.7871 89.2691C68.6673 89.2183 70.959 90.4966 70.9049 93.2246V94.2416C71.0011 113.388 37.5372 112.325 37.4814 94.2416C37.4308 86.3879 37.5322 78.6863 37.4814 70.8328H13.633C-5.1973 70.8276 -3.83053 37.3917 13.4811 37.3865H37.4814V11.5463C37.5094 4.1003 45.8892 0.263336 54.2502 0.206332Z"
+                fill="currentColor" />
+        </symbol>
+    </svg>
     <header id="header" class="header">
         <div class="topbar d-flex align-items-center">
             <div class="container d-flex justify-content-center justify-content-md-between">
@@ -77,7 +84,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main style="overflow-x: hidden;">
         <div class="bg-head" style="background-image: url(./assets/img/portadas/nosotros.jpg);">
             <div class="container">
                 <div class="d-flex py-4" style="align-items: stretch;gap: 1rem;overflow-x: hidden;">
@@ -87,13 +94,29 @@
             </div>
         </div>
         <div class="container py-6 text-center" data-aos="fade-up">
-            <p>En QHALIMED, somos una clínica comprometida con el cuidado integral de la salud, brindando atención
+            <p class="mb-0">En <b style="color: #1E394E ;">QHALIMED</b>, somos una clínica comprometida con el cuidado integral de la salud, brindando
+                atención
                 médica personalizada, oportuna y de calidad. Nuestro propósito es acompañar a cada paciente en su camino
                 hacia el bienestar, ofreciendo un servicio humano que combina conocimiento médico, tecnología
                 actualizada y un trato cálido.</p>
+            <svg class="cruz cruz--primary" style="bottom:0%; left:0%">
+                <use href="#icon-cruz"></use>
+            </svg>
+            <svg class="cruz cruz--pink" style="top:10px; right:-5%">
+                <use href="#icon-cruz"></use>
+            </svg>
         </div>
+
         <div class="historia">
-            <div class="container">
+            <div class="container position-relative">
+                <svg class="cruz cruz--white" style="bottom:20px; right:0px">
+                <use href="#icon-cruz"></use>
+            </svg>
+            <svg class="cruz cruz-md cruz--white" style="opacity:1;top: 150px;
+    left: 40%;
+    width: 40px;animation-duration: 5s; ">
+                <use href="#icon-cruz"></use>
+            </svg>
                 <div class="row">
                     <div class="col-lg-7 order-lg-2 d-flex align-content-between flex-wrap">
                         <div class="d-none d-sm-flex caracteristicas">

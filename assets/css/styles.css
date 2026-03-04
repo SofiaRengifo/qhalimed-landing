@@ -63,6 +63,12 @@ a{
     padding-top:5rem;
     padding-bottom:5rem;
 }
+@media (max-width: 767.98px) {
+    .py-6{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+ }
 .py-7{
     padding-top:6rem;
     padding-bottom:6rem;
@@ -418,7 +424,6 @@ a{
 /* FOOTER*/
 .footer{
     background: linear-gradient(to left, #42d4bb, #80D8B5);
-    z-index: -1;
     position: relative;
     padding-top:5rem;
     padding-bottom:1rem;
@@ -435,8 +440,14 @@ a{
     align-content: center;
     font-size:1.5rem;
     color:#1E394E;
+    cursor: pointer;
 }
-.reder-sociales{
+.redes-sociales div:hover{
+    background:#1E394E;
+    color:white;
+    transition: all 0.3s;
+}
+.redes-sociales{
     margin-top: auto;
 }
 .footer .border-top{
@@ -447,6 +458,7 @@ a{
     left: 50%;
     transform: translateX(-50%);
     top: -60px;
+    z-index: 1;
 }
 .bg-head{
   background-size: contain;

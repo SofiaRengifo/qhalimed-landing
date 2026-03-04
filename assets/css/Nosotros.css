@@ -90,3 +90,52 @@ font-weight: bold;
  .back-mn{
   background-color: rgb(128 216 181 / 80%);
  }
+
+ /* CRUCES */
+.cruz {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  color: #80D8B5;
+  /* animation: flotar 6s ease-in-out infinite; */
+  animation: clinic-motion 8s ease-in-out infinite;
+}
+
+.cruz--pink {
+  color: #1E394E;
+  width: 40px;
+  animation-duration: 9s;
+}
+.cruz--white {
+  color: white;
+  opacity: 0.5;
+  animation-duration: 7s;
+}
+
+@keyframes flotar {
+  0%   { transform: translateY(0) rotate(0); }
+  50%  { transform: translateY(-10px) rotate(180deg); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
+@keyframes clinic-motion {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-10px) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 990.98px) {
+  .cruz-md {
+    top:50%!important;
+    left:30%!important;
+  }
+}
