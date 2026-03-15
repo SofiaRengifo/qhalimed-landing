@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>QHALIMED Médicos </title>
+    <title>QHALIMED </title>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/LOGO.ico">
 
     <!-- Boostrap -->
@@ -24,22 +24,30 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="./assets/css/Blog.css">
+    <link rel="stylesheet" href="./assets/css/Inicio.css">
+    <style>
+        [data-aos="slide-up"] {
+            transform: translateY(200px);
+            /* Más abajo (default ~100px) */
+        }
+    </style>
 </head>
 
-<body>
+<body style="min-height: 100vh;
+  display: flex;
+  flex-direction: column;">
     <header id="header" class="header">
         <div class="topbar d-flex align-items-center">
             <div class="topbar-wave">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,60 
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,60 
                         C180,120 360,0 540,60 
                         C720,120 900,0 1080,60 
                         C1260,120 1440,0 1440,0 
                         L1440,120 
                         L0,120 Z">
-                </path>
-            </svg>
+                    </path>
+                </svg>
             </div>
             <div class="container d-flex justify-content-center justify-content-md-between">
                 <div class="contact-info d-flex align-items-center">
@@ -76,121 +84,22 @@
                             <a href="./Nosotros.html" class="">Nosotros</a>
                         </li>
                         <li>
-                            <a href="./servicios/Pediatria.html" class="">Servicios</a>
+                            <a href="./servicios/Pediatria.html" class="">servicios</a>
                         </li>
                         <li>
                             <a href="./Médicos.html" class="">Médicos</a>
                         </li>
-                        <li><a href="./blog.html" class="active">Blog</a></li>
-                        <li><a href="./Contacto.html">Contacto</a></li>
+                        <li><a href="./blog.html" class="">Blog</a></li>
+                        <li><a href="./Contacto.html" class="active">Contacto</a></li>
                         <a class="cta-btn pulse-effect" href="#appointment">Agendar una cita</a>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
-        <div class="bg-head" style="background-image: url(./assets/img/portadas/blog.webp)">
-            <div class="container">
-                <div class="d-flex py-4" style="align-items: stretch;gap: 1rem;overflow-x: hidden;">
-                    <span class="barra"></span>
-                    <h1 data-aos="fade-right">Blog Qhalimed</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container py-6 pb-10">
-            <div class="row">
-                <div class="col-md-3 mb-4">
-                    <h5>Filtros</h5>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                            <label class="form-check-label" for="firstCheckbox">Consejos de Salud</label>
-                        </li>
-                        <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                            <label class="form-check-label" for="secondCheckbox">Noticias</label>
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="blog-card">
-                                <div class="card-content">
-                                    <img src="./assets/img/blog/news1.jpg" alt="">
-                                    <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
-                                    <div class="blog-text">
-                                        <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres</h5>
-                                        <p>¿Existe igualdad de género en los infartos? La respuesta corta es no. Esto es
-                                            lo que necesitas saber...</p>
-                                        <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="blog-card">
-                                <div class="card-content">
-                                    <img src="./assets/img/blog/news1.jpg" alt="">
-                                    <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
-                                    <div class="blog-text">
-                                        <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres</h5>
-                                        <p>¿Existe igualdad de género en los infartos? La respuesta corta es no. Esto es
-                                            lo que necesitas saber...</p>
-                                        <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="blog-card">
-                                <div class="card-content">
-                                    <img src="./assets/img/blog/news1.jpg" alt="">
-                                    <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
-                                    <div class="blog-text">
-                                        <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres</h5>
-                                        <p>¿Existe igualdad de género en los infartos? La respuesta corta es no. Esto es
-                                            lo que necesitas saber...</p>
-                                        <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="blog-card">
-                                <div class="card-content">
-                                    <img src="./assets/img/blog/news1.jpg" alt="">
-                                    <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
-                                    <div class="blog-text">
-                                        <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres</h5>
-                                        <p>¿Existe igualdad de género en los infartos? La respuesta corta es no. Esto es
-                                            lo que necesitas saber...</p>
-                                        <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="blog-card">
-                                <div class="card-content">
-                                    <img src="./assets/img/blog/news1.jpg" alt="">
-                                    <div class="categoria"><i class="fa-solid fa-newspaper"></i></div>
-                                    <div class="blog-text">
-                                        <h5>Cómo difieren los síntomas de un ataque cardíaco en hombres y mujeres</h5>
-                                        <p>¿Existe igualdad de género en los infartos? La respuesta corta es no. Esto es
-                                            lo que necesitas saber...</p>
-                                        <a href="">Ver más <i class="fa-solid fa-angles-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
+    <main style="flex: 1;display: flex;">
+        <div class="container-fluid p-0" style="flex: 1;" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.8859099714127!2d-79.0341904!3d-8.113098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3df53dc4353f%3A0xe56b2a3efac7717d!2sCusmalabs!5e0!3m2!1ses-419!2spe!4v1773611318405!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
     <!-- Footer -->
@@ -310,8 +219,6 @@
     <script>
         const { AutoScroll } = window.splide.Extensions;
     </script>
-    <!-- slick -->
-
 </body>
 
 </html>

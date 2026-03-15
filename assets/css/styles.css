@@ -206,7 +206,7 @@ a{
 
   .navmenu ul {
     display: flex;
-    gap: 20px;
+    gap: clamp(12px, 2.2vw, 45px);
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
@@ -274,9 +274,13 @@ a{
     background-size: 200%;
     font-size: 14px;
     padding: 8px 25px;
-    margin: 0 0 0 30px;
     border-radius: 50px;
     transition: all 0.6s;
+}
+@media (min-width: 1200px) {
+    .header .cta-btn, .header .cta-btn:focus {
+        margin: 0 0 0 30px;
+    } 
 }
 .header .cta-btn:hover
  {
@@ -366,7 +370,7 @@ a{
 @media (min-width: 992px) {
     .navmenu>ul>li {
         white-space: nowrap;
-        padding: 15px 14px;
+        padding: 15px 0;
     }
 }
 @media (min-width: 992px) {
