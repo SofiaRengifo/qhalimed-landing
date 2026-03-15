@@ -460,14 +460,79 @@ a{
 
 /* FOOTER*/
 .footer{
-    background: linear-gradient(to left, #42d4bb, #80D8B5);
+    /* background: linear-gradient(to left, #42d4bb, #80D8B5); */
+    background-color:#1E394E;
     position: relative;
     padding-top:5rem;
     padding-bottom:1rem;
+    h4,p{
+        color:white;
+    }
 }
-.footer p{
+.ecg-divider{
+  width:100%;
+  height:70px;
+  overflow:hidden;
+}
+
+.ecg-divider svg{
+  width:100%;
+  height:100%;
+}
+@media (max-width: 975px){
+    .ecg-divider{
+    position:relative;
+    }
+
+    .ecg-divider svg{
+    width:1440px;
+    height:100%;
+    max-width:none;
+
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+  }
+
+}
+/* línea base siempre visible */
+
+.ecg-bg{
+  fill:none;
+  stroke:#0cd0be55;
+  stroke-width:3;
+}
+
+/* pulso brillante */
+
+.ecg-pulse{
+  fill:none;
+  stroke:#0cd0be;
+  stroke-width:4;
+  stroke-linecap:round;
+
+  filter:drop-shadow(0 0 6px #0cd0be)
+         drop-shadow(0 0 14px #0cd0be);
+
+  stroke-dasharray:40 1200;
+  stroke-dashoffset:0;
+
+  animation:ecgMove 3s linear infinite;
+}
+
+/* animación tipo monitor */
+
+@keyframes ecgMove{
+  from{
+    stroke-dashoffset:0;
+  }
+  to{
+    stroke-dashoffset:-1280;
+  }
+}
+/* .footer p{
     color:#1E394E;
-}
+} */
 .redes-sociales div{
     height:50px;
     width:50px;
@@ -480,8 +545,8 @@ a{
     cursor: pointer;
 }
 .redes-sociales div:hover{
-    background:#1E394E;
-    color:white;
+    background:#FFC261;
+
     transition: all 0.3s;
 }
 .redes-sociales{
@@ -563,22 +628,34 @@ a{
  }
  /* CONTACTO */
 .contact{
-  background-color:#1E394E;
+  /* background-color:#1E394E; */
+  background: linear-gradient(to left, #42d4bb, #80D8B5);
   border-radius: 1rem;
   padding-top:2rem;
   padding-bottom:2rem;
 }
 .contact h5{
-  color:white;
+  color:#1E394E;
 }
 .contact p{
   opacity:0.8;
   font-size: small;
+  color:#1E394E;
 }
 .contact h5:hover{
-  color:#FFC261!important;
+  color:white!important;
 }
-
+@media (min-width: 992px) {
+    .contact-col:not(:last-child) {
+        border-right: 1px solid #1E394E;
+    }
+}
+@media (max-width: 991.98px) {
+    .footer .branding, .footer .redes-sociales, .footer .location {
+        justify-content: center;
+        justify-items: center;
+    }
+ }
 .btn{
     color: var(--contrast-color);
     background: #1E394E;
